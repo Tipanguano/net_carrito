@@ -1,0 +1,287 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+WebApp_VB_v1
+</name>
+</assembly>
+<members>
+<member name="T:WebApp_VB_v1.My.MyWebExtension">
+ <summary>
+ Módulo usado para definir las propiedades que están disponibles en el espacio de nombres My para proyectos web.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:WebApp_VB_v1.My.MyWebExtension.Computer">
+ <summary>
+ Devuelve información sobre el equipo host.
+ </summary>
+</member>
+<member name="P:WebApp_VB_v1.My.MyWebExtension.User">
+ <summary>
+ Devuelve información del usuario web actual.
+ </summary>
+</member>
+<member name="P:WebApp_VB_v1.My.MyWebExtension.Request">
+ <summary>
+ Devuelve un objeto Request.
+ </summary>
+</member>
+<member name="P:WebApp_VB_v1.My.MyWebExtension.Response">
+ <summary>
+ Devuelve un objeto Response.
+ </summary>
+</member>
+<member name="P:WebApp_VB_v1.My.MyWebExtension.Log">
+ <summary>
+ Devuelve el objeto de registro Asp.
+ </summary>
+</member>
+<member name="F:WebApp_VB_v1.ConsultaFactura._form1">
+<summary>
+Control form1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebApp_VB_v1.ConsultaFactura._txtNombreCliente">
+<summary>
+Control txtNombreCliente.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebApp_VB_v1.ConsultaFactura._txtFechaFactura">
+<summary>
+Control txtFechaFactura.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebApp_VB_v1.ConsultaFactura._CalFechaFactura">
+<summary>
+Control CalFechaFactura.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebApp_VB_v1.ConsultaFactura._btnConsultar">
+<summary>
+Control btnConsultar.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebApp_VB_v1.ConsultaFactura._gridConsulta">
+<summary>
+Control gridConsulta.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebApp_VB_v1.ConsultaFactura._lblMensaje">
+<summary>
+Control lblMensaje.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebApp_VB_v1.insertaFactura._form1">
+<summary>
+Control form1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebApp_VB_v1.insertaFactura._txtCodigoUnico">
+<summary>
+Control txtCodigoUnico.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebApp_VB_v1.insertaFactura._txtNombreCliente">
+<summary>
+Control txtNombreCliente.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebApp_VB_v1.insertaFactura._txtNombreVendedor">
+<summary>
+Control txtNombreVendedor.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebApp_VB_v1.insertaFactura._txtNombreProducto">
+<summary>
+Control txtNombreProducto.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebApp_VB_v1.insertaFactura._txtPrecioUnitario">
+<summary>
+Control txtPrecioUnitario.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebApp_VB_v1.insertaFactura._txtCantidad">
+<summary>
+Control txtCantidad.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebApp_VB_v1.insertaFactura._txtIva">
+<summary>
+Control txtIva.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebApp_VB_v1.insertaFactura._btnEnviar">
+<summary>
+Control btnEnviar.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebApp_VB_v1.insertaFactura._lblMensaje">
+<summary>
+Control lblMensaje.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="T:WebApp_VB_v1.CarritoWS.CarroWS">
+<remarks/>
+</member>
+<member name="M:WebApp_VB_v1.CarritoWS.CarroWS.#ctor">
+<remarks/>
+</member>
+<member name="E:WebApp_VB_v1.CarritoWS.CarroWS.insertaFacturaCabeceraCompleted">
+<remarks/>
+</member>
+<member name="E:WebApp_VB_v1.CarritoWS.CarroWS.InsertarFacturaDetalleCompleted">
+<remarks/>
+</member>
+<member name="E:WebApp_VB_v1.CarritoWS.CarroWS.ConsultarFacturaCompleted">
+<remarks/>
+</member>
+<member name="M:WebApp_VB_v1.CarritoWS.CarroWS.insertaFacturaCabecera(System.String,System.String,System.String)">
+<remarks/>
+</member>
+<member name="M:WebApp_VB_v1.CarritoWS.CarroWS.insertaFacturaCabeceraAsync(System.String,System.String,System.String)">
+<remarks/>
+</member>
+<member name="M:WebApp_VB_v1.CarritoWS.CarroWS.insertaFacturaCabeceraAsync(System.String,System.String,System.String,System.Object)">
+<remarks/>
+</member>
+<member name="M:WebApp_VB_v1.CarritoWS.CarroWS.InsertarFacturaDetalle(System.Int32,System.String,System.Decimal,System.Int32,System.Decimal)">
+<remarks/>
+</member>
+<member name="M:WebApp_VB_v1.CarritoWS.CarroWS.InsertarFacturaDetalleAsync(System.Int32,System.String,System.Decimal,System.Int32,System.Decimal)">
+<remarks/>
+</member>
+<member name="M:WebApp_VB_v1.CarritoWS.CarroWS.InsertarFacturaDetalleAsync(System.Int32,System.String,System.Decimal,System.Int32,System.Decimal,System.Object)">
+<remarks/>
+</member>
+<member name="M:WebApp_VB_v1.CarritoWS.CarroWS.ConsultarFactura(System.String,System.DateTime)">
+<remarks/>
+</member>
+<member name="M:WebApp_VB_v1.CarritoWS.CarroWS.ConsultarFacturaAsync(System.String,System.DateTime)">
+<remarks/>
+</member>
+<member name="M:WebApp_VB_v1.CarritoWS.CarroWS.ConsultarFacturaAsync(System.String,System.DateTime,System.Object)">
+<remarks/>
+</member>
+<member name="M:WebApp_VB_v1.CarritoWS.CarroWS.CancelAsync(System.Object)">
+<remarks/>
+</member>
+<member name="T:WebApp_VB_v1.CarritoWS.BaseRespuestaInserta">
+<comentarios/>
+</member>
+<member name="P:WebApp_VB_v1.CarritoWS.BaseRespuestaInserta.CodigoFactura">
+<comentarios/>
+</member>
+<member name="T:WebApp_VB_v1.CarritoWS.BaseRespuesta">
+<comentarios/>
+</member>
+<member name="P:WebApp_VB_v1.CarritoWS.BaseRespuesta.codigoRespuesta">
+<comentarios/>
+</member>
+<member name="P:WebApp_VB_v1.CarritoWS.BaseRespuesta.mensajeRespuesta">
+<comentarios/>
+</member>
+<member name="T:WebApp_VB_v1.CarritoWS.BaseRespuestaConsulta">
+<comentarios/>
+</member>
+<member name="P:WebApp_VB_v1.CarritoWS.BaseRespuestaConsulta.Consulta">
+<comentarios/>
+</member>
+<member name="T:WebApp_VB_v1.CarritoWS.insertaFacturaCabeceraCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:WebApp_VB_v1.CarritoWS.insertaFacturaCabeceraCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:WebApp_VB_v1.CarritoWS.insertaFacturaCabeceraCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="T:WebApp_VB_v1.CarritoWS.InsertarFacturaDetalleCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:WebApp_VB_v1.CarritoWS.InsertarFacturaDetalleCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:WebApp_VB_v1.CarritoWS.InsertarFacturaDetalleCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="T:WebApp_VB_v1.CarritoWS.ConsultarFacturaCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:WebApp_VB_v1.CarritoWS.ConsultarFacturaCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:WebApp_VB_v1.CarritoWS.ConsultarFacturaCompletedEventArgs.Result">
+<remarks/>
+</member>
+</members>
+</doc>

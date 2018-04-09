@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="insertaFacturaCabecera">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="nombreCliente" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="nombreVendedor" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="codigoUnico" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="insertaFacturaCabeceraResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="insertaFacturaCabeceraResult" type="tns:BaseRespuestaInserta" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="BaseRespuestaInserta">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:BaseRespuesta">
+            <s:sequence>
+              <s:element minOccurs="1" maxOccurs="1" name="CodigoFactura" type="s:int" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="BaseRespuesta">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="codigoRespuesta" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="mensajeRespuesta" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="InsertarFacturaDetalle">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="idFactura" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="nombreProducto" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="precioUnitario" type="s:decimal" />
+            <s:element minOccurs="1" maxOccurs="1" name="cantidad" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="iva" type="s:decimal" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertarFacturaDetalleResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InsertarFacturaDetalleResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConsultarFactura">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="nombreCliente" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="fechaConsulta" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConsultarFacturaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ConsultarFacturaResult" type="tns:BaseRespuestaConsulta" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="BaseRespuestaConsulta">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:BaseRespuesta">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="Consulta">
+                <s:complexType>
+                  <s:sequence>
+                    <s:element ref="s:schema" />
+                    <s:any />
+                  </s:sequence>
+                </s:complexType>
+              </s:element>
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="insertaFacturaCabeceraSoapIn">
+    <wsdl:part name="parameters" element="tns:insertaFacturaCabecera" />
+  </wsdl:message>
+  <wsdl:message name="insertaFacturaCabeceraSoapOut">
+    <wsdl:part name="parameters" element="tns:insertaFacturaCabeceraResponse" />
+  </wsdl:message>
+  <wsdl:message name="InsertarFacturaDetalleSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertarFacturaDetalle" />
+  </wsdl:message>
+  <wsdl:message name="InsertarFacturaDetalleSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertarFacturaDetalleResponse" />
+  </wsdl:message>
+  <wsdl:message name="ConsultarFacturaSoapIn">
+    <wsdl:part name="parameters" element="tns:ConsultarFactura" />
+  </wsdl:message>
+  <wsdl:message name="ConsultarFacturaSoapOut">
+    <wsdl:part name="parameters" element="tns:ConsultarFacturaResponse" />
+  </wsdl:message>
+  <wsdl:portType name="CarroWSSoap">
+    <wsdl:operation name="insertaFacturaCabecera">
+      <wsdl:input message="tns:insertaFacturaCabeceraSoapIn" />
+      <wsdl:output message="tns:insertaFacturaCabeceraSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertarFacturaDetalle">
+      <wsdl:input message="tns:InsertarFacturaDetalleSoapIn" />
+      <wsdl:output message="tns:InsertarFacturaDetalleSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarFactura">
+      <wsdl:input message="tns:ConsultarFacturaSoapIn" />
+      <wsdl:output message="tns:ConsultarFacturaSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="CarroWSSoap" type="tns:CarroWSSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="insertaFacturaCabecera">
+      <soap:operation soapAction="http://tempuri.org/insertaFacturaCabecera" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertarFacturaDetalle">
+      <soap:operation soapAction="http://tempuri.org/InsertarFacturaDetalle" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarFactura">
+      <soap:operation soapAction="http://tempuri.org/ConsultarFactura" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="CarroWSSoap12" type="tns:CarroWSSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="insertaFacturaCabecera">
+      <soap12:operation soapAction="http://tempuri.org/insertaFacturaCabecera" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertarFacturaDetalle">
+      <soap12:operation soapAction="http://tempuri.org/InsertarFacturaDetalle" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarFactura">
+      <soap12:operation soapAction="http://tempuri.org/ConsultarFactura" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="CarroWS">
+    <wsdl:port name="CarroWSSoap" binding="tns:CarroWSSoap">
+      <soap:address location="http://localhost:4224/CarroWS.asmx" />
+    </wsdl:port>
+    <wsdl:port name="CarroWSSoap12" binding="tns:CarroWSSoap12">
+      <soap12:address location="http://localhost:4224/CarroWS.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

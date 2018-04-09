@@ -1,0 +1,13 @@
+C:\Users\xavier\source\repos\WebApp_basic_cSharp_v1\WebApp_basic_cSharp_v1\bin\WebApp_basic_cSharp_v1.dll.config
+C:\Users\xavier\source\repos\WebApp_basic_cSharp_v1\WebApp_basic_cSharp_v1\bin\WebApp_basic_cSharp_v1.dll
+C:\Users\xavier\source\repos\WebApp_basic_cSharp_v1\WebApp_basic_cSharp_v1\bin\WebApp_basic_cSharp_v1.pdb
+C:\Users\xavier\source\repos\WebApp_basic_cSharp_v1\WebApp_basic_cSharp_v1\bin\WebApp_basic_cSharp_v1.xml
+C:\Users\xavier\source\repos\WebApp_basic_cSharp_v1\WebApp_basic_cSharp_v1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\xavier\source\repos\WebApp_basic_cSharp_v1\WebApp_basic_cSharp_v1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\xavier\source\repos\WebApp_basic_cSharp_v1\WebApp_basic_cSharp_v1\obj\Debug\WebApp_basic_cSharp_v1.vbprojResolveAssemblyReference.cache
+C:\Users\xavier\source\repos\WebApp_basic_cSharp_v1\WebApp_basic_cSharp_v1\obj\Debug\WebApp_basic_cSharp_v1.Resources.resources
+C:\Users\xavier\source\repos\WebApp_basic_cSharp_v1\WebApp_basic_cSharp_v1\obj\Debug\WebApp_basic_cSharp_v1.vbproj.GenerateResource.Cache
+C:\Users\xavier\source\repos\WebApp_basic_cSharp_v1\WebApp_basic_cSharp_v1\obj\Debug\WebApp_basic_cSharp_v1.vbproj.CoreCompileInputs.cache
+C:\Users\xavier\source\repos\WebApp_basic_cSharp_v1\WebApp_basic_cSharp_v1\obj\Debug\WebApp_basic_cSharp_v1.dll
+C:\Users\xavier\source\repos\WebApp_basic_cSharp_v1\WebApp_basic_cSharp_v1\obj\Debug\WebApp_basic_cSharp_v1.xml
+C:\Users\xavier\source\repos\WebApp_basic_cSharp_v1\WebApp_basic_cSharp_v1\obj\Debug\WebApp_basic_cSharp_v1.pdb
