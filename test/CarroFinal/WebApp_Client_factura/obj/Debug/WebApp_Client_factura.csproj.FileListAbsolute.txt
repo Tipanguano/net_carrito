@@ -1,0 +1,5 @@
+C:\Users\is-etipanguano\Documents\Visual Studio 2012\Projects\CarroFinal\WebApp_Client_factura\bin\WebApp_Client_factura.dll
+C:\Users\is-etipanguano\Documents\Visual Studio 2012\Projects\CarroFinal\WebApp_Client_factura\bin\WebApp_Client_factura.pdb
+C:\Users\is-etipanguano\Documents\Visual Studio 2012\Projects\CarroFinal\WebApp_Client_factura\obj\Debug\WebApp_Client_factura.csprojResolveAssemblyReference.cache
+C:\Users\is-etipanguano\Documents\Visual Studio 2012\Projects\CarroFinal\WebApp_Client_factura\obj\Debug\WebApp_Client_factura.dll
+C:\Users\is-etipanguano\Documents\Visual Studio 2012\Projects\CarroFinal\WebApp_Client_factura\obj\Debug\WebApp_Client_factura.pdb

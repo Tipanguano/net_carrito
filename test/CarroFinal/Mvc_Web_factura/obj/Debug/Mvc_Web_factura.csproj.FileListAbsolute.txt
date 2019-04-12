@@ -1,0 +1,13 @@
+C:\Users\is-etipanguano\Documents\Visual Studio 2012\Projects\CarroFinal\Mvc_Web_factura\bin\AngularJSWebApiEmpty.dll
+C:\Users\is-etipanguano\Documents\Visual Studio 2012\Projects\CarroFinal\Mvc_Web_factura\bin\AngularJSWebApiEmpty.pdb
+C:\Users\is-etipanguano\Documents\Visual Studio 2012\Projects\CarroFinal\Mvc_Web_factura\bin\Newtonsoft.Json.dll
+C:\Users\is-etipanguano\Documents\Visual Studio 2012\Projects\CarroFinal\Mvc_Web_factura\bin\System.Net.Http.Formatting.dll
+C:\Users\is-etipanguano\Documents\Visual Studio 2012\Projects\CarroFinal\Mvc_Web_factura\bin\System.Web.Http.dll
+C:\Users\is-etipanguano\Documents\Visual Studio 2012\Projects\CarroFinal\Mvc_Web_factura\bin\System.Web.Http.WebHost.dll
+C:\Users\is-etipanguano\Documents\Visual Studio 2012\Projects\CarroFinal\Mvc_Web_factura\bin\Newtonsoft.Json.xml
+C:\Users\is-etipanguano\Documents\Visual Studio 2012\Projects\CarroFinal\Mvc_Web_factura\bin\System.Net.Http.Formatting.xml
+C:\Users\is-etipanguano\Documents\Visual Studio 2012\Projects\CarroFinal\Mvc_Web_factura\bin\System.Web.Http.xml
+C:\Users\is-etipanguano\Documents\Visual Studio 2012\Projects\CarroFinal\Mvc_Web_factura\bin\System.Web.Http.WebHost.xml
+C:\Users\is-etipanguano\Documents\Visual Studio 2012\Projects\CarroFinal\Mvc_Web_factura\obj\Debug\Mvc_Web_factura.csprojResolveAssemblyReference.cache
+C:\Users\is-etipanguano\Documents\Visual Studio 2012\Projects\CarroFinal\Mvc_Web_factura\obj\Debug\AngularJSWebApiEmpty.dll
+C:\Users\is-etipanguano\Documents\Visual Studio 2012\Projects\CarroFinal\Mvc_Web_factura\obj\Debug\AngularJSWebApiEmpty.pdb

@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="InsertaFacturaCbecera">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="nombreCliente" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="nombreVenvedor" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertaFacturaCbeceraResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InsertaFacturaCbeceraResult" type="tns:ResponseFacturaInserta" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ResponseFacturaInserta">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:BaseRespuesta">
+            <s:sequence>
+              <s:element minOccurs="1" maxOccurs="1" name="CodigoFactura" type="s:int" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="BaseRespuesta">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="codigoSalida" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="mensajeSalida" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="InsertaFacturaDetalle">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="idFactura" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="nombreProducto" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="precioUnitario" type="s:decimal" />
+            <s:element minOccurs="1" maxOccurs="1" name="cantidad" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="iva" type="s:decimal" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertaFacturaDetalleResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InsertaFacturaDetalleResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConsultaFactura">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="nombreCliente" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="fechaFactura" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConsultaFacturaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ConsultaFacturaResult" type="tns:ResponseFacturaConsulta" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ResponseFacturaConsulta">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:BaseRespuesta">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="ConsultaDs">
+                <s:complexType>
+                  <s:sequence>
+                    <s:element ref="s:schema" />
+                    <s:any />
+                  </s:sequence>
+                </s:complexType>
+              </s:element>
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="InsertaFacturaCbeceraSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertaFacturaCbecera" />
+  </wsdl:message>
+  <wsdl:message name="InsertaFacturaCbeceraSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertaFacturaCbeceraResponse" />
+  </wsdl:message>
+  <wsdl:message name="InsertaFacturaDetalleSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertaFacturaDetalle" />
+  </wsdl:message>
+  <wsdl:message name="InsertaFacturaDetalleSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertaFacturaDetalleResponse" />
+  </wsdl:message>
+  <wsdl:message name="ConsultaFacturaSoapIn">
+    <wsdl:part name="parameters" element="tns:ConsultaFactura" />
+  </wsdl:message>
+  <wsdl:message name="ConsultaFacturaSoapOut">
+    <wsdl:part name="parameters" element="tns:ConsultaFacturaResponse" />
+  </wsdl:message>
+  <wsdl:portType name="FacturaWSSoap">
+    <wsdl:operation name="InsertaFacturaCbecera">
+      <wsdl:input message="tns:InsertaFacturaCbeceraSoapIn" />
+      <wsdl:output message="tns:InsertaFacturaCbeceraSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertaFacturaDetalle">
+      <wsdl:input message="tns:InsertaFacturaDetalleSoapIn" />
+      <wsdl:output message="tns:InsertaFacturaDetalleSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaFactura">
+      <wsdl:input message="tns:ConsultaFacturaSoapIn" />
+      <wsdl:output message="tns:ConsultaFacturaSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="FacturaWSSoap" type="tns:FacturaWSSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="InsertaFacturaCbecera">
+      <soap:operation soapAction="http://tempuri.org/InsertaFacturaCbecera" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertaFacturaDetalle">
+      <soap:operation soapAction="http://tempuri.org/InsertaFacturaDetalle" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaFactura">
+      <soap:operation soapAction="http://tempuri.org/ConsultaFactura" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="FacturaWSSoap12" type="tns:FacturaWSSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="InsertaFacturaCbecera">
+      <soap12:operation soapAction="http://tempuri.org/InsertaFacturaCbecera" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertaFacturaDetalle">
+      <soap12:operation soapAction="http://tempuri.org/InsertaFacturaDetalle" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaFactura">
+      <soap12:operation soapAction="http://tempuri.org/ConsultaFactura" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="FacturaWS">
+    <wsdl:port name="FacturaWSSoap" binding="tns:FacturaWSSoap">
+      <soap:address location="http://localhost:56819/FacturaWS.asmx" />
+    </wsdl:port>
+    <wsdl:port name="FacturaWSSoap12" binding="tns:FacturaWSSoap12">
+      <soap12:address location="http://localhost:56819/FacturaWS.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
